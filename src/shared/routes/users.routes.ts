@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import multer from 'multer';
 import CreateUserService from '../services/CreateUserService';
-import uploadConfig from '../config/upload';
+import uploadConfig from '../../config/upload';
 import ensureAuthenticated from '../middlewares/ensureAuthenticated';
 import UpdateUserAvatarService from '../services/UpdateUserAvatarService';
 
@@ -19,7 +19,7 @@ usersRouter.post('/', async (request, response) => {
       password,
     });
 
-    const returnedUser = { 
+    const returnedUser = {
       name: user.name,
       email: user.email,
     };
