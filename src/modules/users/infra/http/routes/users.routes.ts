@@ -12,6 +12,7 @@ usersRouter.post('/', async (request, response) => {
   try {
     const { name, email, password } = request.body;
 
+    console.log("---",request.body);
     console.log("Nome: ", name);
     console.log("email: ", email);
     console.log("senha: ", password);
