@@ -29,6 +29,7 @@ class CreateUserService {
       password: hashedPassword,
     });
 
+    console.log(user);
     await userRepository.save(user);
 
     return user;
