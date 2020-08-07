@@ -1,6 +1,6 @@
+import "reflect-metadata"
 import CreateAppointmentService from './CreateAppointmentService';
 import FakeAppointmentsRepository from '../repositories/fakes/FakeAppointmentsRepository';
-import Appointment from '../infra/typeorm/entities/Appointment';
 
 describe('CreateAppointment', () => {
     it('should be able to create a new appointment',async() => {
