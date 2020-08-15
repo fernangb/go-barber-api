@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import {container} from 'tsyringe';
+import { container } from 'tsyringe';
 import multer from 'multer';
 import uploadConfig from '@config/upload';
 import ensureAuthenticated from '../middlewares/ensureAuthenticated';
@@ -18,7 +18,7 @@ usersRouter.patch(
   '/avatar',
   ensureAuthenticated,
   upload.single('avatar'),
-  userAvatarController.update
+  userAvatarController.update,
 );
 
 export default usersRouter;
