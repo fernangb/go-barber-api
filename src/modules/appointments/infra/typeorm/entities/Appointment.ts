@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import {
   Entity,
   Column,
@@ -7,6 +8,7 @@ import {
   ManyToOne,
   JoinColumn,
 } from 'typeorm';
+// eslint-disable-next-line import/no-unresolved
 import User from '@modules/users/infra/typeorm/entities/User';
 
 @Entity('appointments')
